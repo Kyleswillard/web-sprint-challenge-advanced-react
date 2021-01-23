@@ -10,6 +10,9 @@ render(<CheckoutForm/>)
 });
 
 test("form shows success message on submit with form details", () => {
-  const message = window.getByText(/You have ordered some plants! Woo-hoo!/i)
+  const message = window.queryByText('You have ordered some plants! Woo-hoo!')
   expect(message).toBeInTheDocument()
+
+
+
 });
